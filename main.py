@@ -83,7 +83,7 @@ def create_board_image(board, player_color):
             x2 = x1 + square
             y2 = y1 + square
 
-            fill = light if (rank + file_) % 2 == 0 else dark
+            fill = dark if (rank + file_) % 2 == 0 else light
             draw.rectangle([x1, y1, x2, y2], fill=fill)
 
     if board.move_stack:
